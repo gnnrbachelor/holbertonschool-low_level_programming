@@ -4,7 +4,7 @@
  * main - Entry point
  * @void: no parameter
  *
- * Description: Prints message using putchar
+ * Description: Prints alphabet in upper and lower case
  * Return:  0
  */
 
@@ -14,8 +14,9 @@ int main(void)
 
 	for (c = 'a'; c <= 'z'; c++)
 		putchar(c);
+	for (c = 'A'; c <= 'Z'; c++)
+		putchar(c);
 
 	putchar('\n');
+	return (0);
 }
-
-
