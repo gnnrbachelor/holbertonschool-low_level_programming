@@ -4,19 +4,17 @@
  * main - Entry point
  * @void: no parameter
  *
- * Description: Prints alphabet using putchar
+ * Description: Prints numbers up to 10
  * Return:  0
  */
 
 int main(void)
 {
-	char c;
+	int i;
 
-	for (c = 'a'; c <= 'z'; c++)
-		putchar(c);
+	for (i = 0; i < 10; i++)
+		putschar(i);
 
-	putchar('\n');
+	putschar('\n);
 	return (0);
 }
-
-
