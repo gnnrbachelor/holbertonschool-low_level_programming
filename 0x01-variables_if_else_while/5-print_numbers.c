@@ -15,6 +15,6 @@ int main(void)
 	for (i = 0; i < 10; i++)
 		putschar(i);
 
-	putschar('\n);
+	putschar('\n');
 	return (0);
 }
