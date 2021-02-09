@@ -3,21 +3,20 @@
 /**
  * main - entry
  *
- * description: Prints holberton
- * return: value 0
+ * Return: Always 0
  */
 
 int main(void)
 {
-	_putschar('H');
-	_putschar('o');
-	_putschar('l');
-	_putschar('b');
-	_putschar('e');
-	_putschar('r');
-	_putschar('t');
-	_putschar('o');
-	_putschar('n');
-	_putschar('\n');
+	_putchar('H');
+	_putchar('o');
+	_putchar('l');
+	_putchar('b');
+	_putchar('e');
+	_putchar('r');
+	_putchar('t');
+	_putchar('o');
+	_putchar('n');
+	_putchar('\n');
 	return (0);
 }
