@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * main - Prints holberton
+ * main - entry
  *
- *
- * return: 0
+ * description: Prints holberton
+ * return: value 0
  */
 
 int main(void)
@@ -19,6 +19,5 @@ int main(void)
 	_putschar('o');
 	_putschar('n');
 	_putschar('\n');
-	
 	return (0);
 }
