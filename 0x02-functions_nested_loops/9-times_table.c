@@ -17,15 +17,15 @@ void times_table(void)
 	int mul;
 	int prod;
 
-	for (cand = 0; cand < 10; cand++)
+	for (cand = 0; cand < 9; cand++)
 	{
 		_putchar('0');
-		for (mul = 1; mul < 10; mul++)
+		for (mul = 1; mul <= 9; mul++)
 		{
 			_putchar(',');
 			_putchar(' ');
 			prod = mul * cand;
-			if (prod > 10)
+			if (prod >= 9)
 			{
 				_putchar((prod / 10) + '0');
 				_putchar((prod % 10) + '0');
