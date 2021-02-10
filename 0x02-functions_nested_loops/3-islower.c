@@ -1,11 +1,15 @@
+/*
+ * File: 3-islower.c
+ * Description: Return 1 if is lowercase
+ */
+
 #include "holberton.h"
 
 /**
- * _islower: Checks if character is lower case
- *
- * @c: character value
- *
- * Return: 1 or 0
+ * islower - Checks for lower
+ * @c: character
+ * Description: Checks for lower case char
+ * Return: 0 or 1
  */
 
 int _islower(int c)
