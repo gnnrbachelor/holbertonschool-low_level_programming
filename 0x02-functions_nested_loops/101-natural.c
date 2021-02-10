@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * print_to_98 - prints natural number to 98
- * @n: number to print from
+ * main - prints natural number to 98
+ *
  * Return: 0
  */
 
