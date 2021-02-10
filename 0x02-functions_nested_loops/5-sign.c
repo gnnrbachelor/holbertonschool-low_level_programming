@@ -1,23 +1,19 @@
+/*
+ * File: 5-sign.c
+ * Description: Prints sign
+ */
+
 #include "holberton.h"
 
-/*
- * 5-islower
- *
- *
- * /
-
 /**
- * printsign: Returns sign
- *
- * @n: The integer tested
- *
- * Description: Returns values and prints to shell
- * Return: 1, 0, -1
+ * print_sign - Determines if alphabetic
+ * @n: integer
+ * Return: 0, 1. -1
  */
 
 int print_sign(int n)
 {
-	if (n < 0)
+	if (n > 0)
 	{
 		_putchar('+');
 		return (1);
