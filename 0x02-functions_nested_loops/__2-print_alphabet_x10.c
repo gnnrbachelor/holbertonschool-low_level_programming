@@ -8,15 +8,18 @@
 
 void print_alphabet(void)
 {
-	int c;
-	int count;
+	char c = 'a';
+	int i = 10;
 
-	for (count = 0; count <= 10; count++)
+	while (i > 0)
 	{
-		for (c = 'a'; c <= 'z'; c++)
+		c = 'a';
+		while (c <= 'z')
 		{
 			_putchar(c);
+			c++;
 		}
+		i--;
 		_putchar('\n');
 	}
 }
