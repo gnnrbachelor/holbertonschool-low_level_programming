@@ -1,12 +1,15 @@
+/*
+ * File: 9-times_table
+ * Description: Prints times table to 9
+ */
+
 #include "holberton.h"
 
 /**
- * Function: times_table
- * @void
+ * Function: times_table- Prints times table to 9
  *
- * Description: Prints times table to 9
- * Return: Always 0
  */
+
 
 void times_table(void)
 {
@@ -21,7 +24,6 @@ void times_table(void)
 		{
 			_putchar(',');
 			_putchar(' ');
-			
 			prod = mul * cand;
 			if (prod > 10)
 			{
