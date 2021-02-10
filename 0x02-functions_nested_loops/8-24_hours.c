@@ -1,18 +1,13 @@
+/*
+ * File: 8-24_hours.c
+ * Description: Prints Jack Bauer's hours
+ */
+
 #include "holberton.h"
 
-/*
- * 8-24_hours.c
- *
- *
- * /
-
 /**
- * Function: jack_bauer
- *
- * @void
- *
- * Description: Counts every minute of Jack Baur's day
- * Return: 0
+ * jack_bauer - Prints Jack Bauer time
+ * Return: void
  */
 
 void jack_bauer(void)

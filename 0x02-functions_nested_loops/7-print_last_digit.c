@@ -1,32 +1,28 @@
+/*
+ * File: 7-print_last_digit.
+ * Description: Prints last digit
+ */
+
 #include "holberton.h"
 
-/*
- * 7-print_last_digit.c
- *
- *
- * /
-
 /**
- * Function: print_last_digit
- *
- * @n: The integer
- *
- * Description: Returns last digit
- * Return: 0
+ * print_last_digit - Prints last digit.
+ * @n: integer
+ * Return: n
  */
+
 
 int print_last_digit(int n)
 {
-	if (n < 0)
+	int d;
+
+	d = n % 10;
+	if (d < 0)
 	{
-		n = (n % 10) * (-1);
-		_putchar(n);
-		return(n);
+		d *= -1;
+		_putchar(d + '0');
 	}
 	else
-	{
-		n = (n % 10);
-		_putchar(n);
-		return(n);
-	}
+		_putchar(d + '0');
+	return (d);
 }
