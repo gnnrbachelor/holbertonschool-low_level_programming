@@ -3,11 +3,11 @@
 /**
  * print_times_table - prints natural number to 98
  * @n: times table to n
- * Return: 0 or --1
+ * Return: void
  */
 
 
-int print_times_table(int n)
+void print_times_table(int n)
 {
 	int cand;
 	int mul;
@@ -45,5 +45,4 @@ int print_times_table(int n)
 			_putchar('\n');
 		}
 	}
-	return (-1);
 }
