@@ -1,13 +1,9 @@
-/*
- * File: 100-times_table.c
- * Description: Prints times table to n
- */
-
 #include "holberton.h"
 
 /**
- * times_table- Prints times table to n
- *
+ * print_times_table - prints natural number to 98
+ * @n: times table to n
+ * Return: 0 or --1
  */
 
 
@@ -17,30 +13,37 @@ int print_times_table(int n)
 	int mul;
 	int prod;
 
-	if (n > 15 || n < 0)
-		return (-1);
-
-	for (cand = 0; cand < n; cand++)
+	if (n < 15 && n > 0)
 	{
-		_putchar('0');
-		for (mul = 1; mul <= n; mul++)
+		for (cand = 0; cand < n; cand++)
 		{
-			_putchar(',');
-			_putchar(' ');
-			prod = mul * cand;
-			if (prod >= n)
+			_putchar('0');
+			for (mul = 1; mul <= n; mul++)
 			{
-				_putchar((prod / 10) + '0');
-				_putchar((prod % 10) + '0');
-			}
-			else
-			{
+				_putchar(',');
 				_putchar(' ');
+				prod = mul * cand;
+				if (prod < 100)
+				{
+					_putchar(' ');
+				}
+				if (prod < 10)
+				{
+					_putchar(' ');
+				}
+				if (prod >= 100)
+				{
+					_putchar((prod / 100) + '0');
+					_putchar((prod / 10) % 10 + '0');
+				}
+				else if (prod < 100 && prod >= 10)
+				{
+					_putchar((prod / 10) + '0');
+				}
 				_putchar((prod % 10) + '0');
 			}
-
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
-
+	return (-1);
 }
