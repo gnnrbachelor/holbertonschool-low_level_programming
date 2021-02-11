@@ -2,7 +2,7 @@
 
 /**
  * main - prints natural number to 98
- * 
+ *
  * Return: 0 means success
  */
 
@@ -16,14 +16,14 @@ int  main(void)
 	num1 = 0;
 	num2 = 1;
 
-	for (i = 0; i < 50; i++)
+	for (i = 0; i < 49; i++)
 	{
 		sum = num1 + num2;
 		printf("%ld", sum);
 		num1 = num2;
 		num2 = sum;
 
-		if (i == 49)
+		if (i == 48)
 		{
 			printf("\n");
 		}

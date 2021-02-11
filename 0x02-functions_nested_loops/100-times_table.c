@@ -6,7 +6,7 @@
 #include "holberton.h"
 
 /**
- * Function: times_table- Prints times table to n
+ * times_table- Prints times table to n
  *
  */
 
