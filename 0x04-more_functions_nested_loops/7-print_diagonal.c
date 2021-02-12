@@ -15,20 +15,25 @@ void print_diagonal(int n)
 	int i = 0;
 
 	initial = n;
-	while (n > 0)
-	{
-		if (i > 0 && i < initial)
-		{
-			spaces = i;
-			while (spaces)
-			{
-				_putchar(' ');
-				spaces--;
-			}
-		}
-		_putchar('\\');
+	if (n <= 0)
 		_putchar('\n');
-		i++;
-		n--;
+	else
+	{
+		while (n > 0)
+		{
+			if (i > 0 && i < initial)
+			{
+				spaces = i;
+				while (spaces)
+				{
+					_putchar(' ');
+					spaces--;
+				}
+			}
+			_putchar('\\');
+			_putchar('\n');
+			i++;
+			n--;
+		}
 	}
 }
