@@ -31,5 +31,4 @@ void print_diagonal(int n)
 		i++;
 		n--;
 	}
-	_putchar('\n');
 }
