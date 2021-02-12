@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
  * print_triangle - prints triangle
@@ -20,13 +19,13 @@ void print_triangle(int size)
 		for (lcount = 1; lcount <= size; lcount++)
 		{
 			for (i = size - lcount; i > 0; i--)
-				printf(" ");
+				_putchar(' ');
 
 			for (j = 0; j < lcount; j++)
-				printf("#");
+				_putchar('#');
 
-			printf("\n");
+			_putchar('\n');
 		}
 	}
-	printf("\n");
+	_putchar('\n');
 }
