@@ -14,7 +14,9 @@ void print_triangle(int size)
 	int j;
 	int lcount;
 
-	if (size > 0)
+	if (size <= 0)
+		_putchar('\n');
+	else
 	{
 		for (lcount = 1; lcount <= size; lcount++)
 		{
@@ -27,5 +29,4 @@ void print_triangle(int size)
 			_putchar('\n');
 		}
 	}
-	_putchar('\n');
 }
