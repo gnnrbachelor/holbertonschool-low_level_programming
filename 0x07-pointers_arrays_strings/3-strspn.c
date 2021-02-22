@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _strchr - Copies memory area
+ * _strchr - Finds first occurance of c
  *
  * @s: string
  * @c: character for search
@@ -17,5 +17,5 @@ char *_strchr(char *s, char c)
 		if (s[i]  == c)
 			return (s + i);
 
-	return (NULL);
+	return ('\0');
 }
