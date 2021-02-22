@@ -7,7 +7,7 @@
  * @b: byte
  * @n: number to fill
  *
- * Return:
+ * Return: s
  */
 
 char *_memset(char *s, char b, unsigned int n)
