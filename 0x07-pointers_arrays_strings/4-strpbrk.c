@@ -1,15 +1,29 @@
 #include "holberton.h"
 
 /**
- * _strpbrk - Searches string for any set of matching char
+ * _strpbrk - Returns bytes of first match
  *
  * @s: string
- * @c: string
+ * @accept: string
  *
- * Return: Pointer to first match
+ * Return: Number of bytes of substring
  */
 
-char *_strpbrk(char s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-	while
+	int i = 0;
+	int j;
+
+	while (s[i])
+	{
+		j = 0;
+		while (accept[j])
+		{
+			if (s[i] == accept[j])
+				return (s + i);
+		j++;
+		}
+	i++;
+	}
+	return (0);
 }
