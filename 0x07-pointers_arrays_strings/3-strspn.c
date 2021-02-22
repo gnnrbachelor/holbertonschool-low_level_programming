@@ -1,21 +1,29 @@
 #include "holberton.h"
 
 /**
- * _strchr - Finds first occurance of c
+ * _strspn - Returns bytes of substring
  *
  * @s: string
- * @c: character for search
+ * @accept: string
  *
- * Return: First occurence or NULL
+ * Return: Number of bytes of substring
  */
 
-char *_strchr(char *s, char c)
+unsigned int _strspn(char *s, char *accept)
 {
-	int i;
+	int i, j;
+	unsigned int count = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
-		if (s[i]  == c)
-			return (s + i);
-
-	return ('\0');
+	{
+		for (j = 0; accept[j] != '\0'; j++)
+		{
+			if (s[i] == s[j])
+			{
+				count++;
+				break;
+			}
+		}
+	}
+	return (count);
 }
