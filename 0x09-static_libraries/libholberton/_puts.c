@@ -1,18 +1,28 @@
-#include <stdio.h>
+#include "holberton.h"
 
 /**
- * main - Entry point
- * @void: no parameter
- *
- * Description: Prints "Programming is like building a multilingual puzzle
- * Return:  0
- */
+ *  * _puts - prints a string
+ *   *
+ *    * @str: string to be printed
+ *     *
+ *      * Return: void
+ *       */
 
-#include <stdio.h>
-
-
-int main(void)
+void _puts(char *str)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+	int i = 0;
+	int j;
+	int len;
+
+	while (str[i] != '\0')
+	{
+		len++;
+		i++;
+	}
+
+	for (j = 0; j < len; j++)
+		_putchar(str[j]);
+
+	_putchar('\n');
 }
+
