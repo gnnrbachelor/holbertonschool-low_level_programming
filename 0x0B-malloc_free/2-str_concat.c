@@ -1,6 +1,5 @@
 #include "holberton.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
  * str_concat - Concatenates two strings
@@ -13,7 +12,8 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int i, j, len;
+	int i, j;
+	int len = 0;
 	char *n_array;
 
 	if (s1 == NULL)
