@@ -2,16 +2,17 @@
 #include <stdio.h>
 
 /**
- * main - Prints minimum number of coins for change
+ * make_change - Prints minimum number of coins for change
  *
- * @argc: Number of arguments
- * @argv: Arguments
- * Return: 0
+ * @n: total for change
+ *
+ * Return: n
  */
 
 int make_change(int n)
 {
 	int coins = 0;
+
 	while (n > 0)
 	{
 		while (n >= 25)
@@ -43,6 +44,14 @@ int make_change(int n)
 	return (coins);
 }
 
+/**
+ * main - Prints minimum number of coins for change
+ *
+ * @argc: Number of arguments
+ * @argv: Arguments
+ * Return: 0
+ */
+
 int main(int argc, char *argv[])
 {
 	int coins, n;
@@ -58,7 +67,7 @@ int main(int argc, char *argv[])
 	if (n < 0)
 	{
 		printf("%d\n", 0);
-		return 0;
+		return (0);
 	}
 
 	coins = make_change(n);
