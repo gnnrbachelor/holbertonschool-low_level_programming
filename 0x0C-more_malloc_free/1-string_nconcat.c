@@ -31,8 +31,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	for (i = 0; s2[i]; i++)
 		len2++;
-	len1++;
-	len2++;
 
 	if (n < len2)
 		len2 = n;
