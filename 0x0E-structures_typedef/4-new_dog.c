@@ -22,7 +22,7 @@ int _strlen(char *s)
 /**
  * _strcpy - Returns string length
  *
- * @des: Destination
+ * @dest: Destination
  * @src: Original string
  *
  * Return: String length
@@ -43,7 +43,6 @@ char *_strcpy(char *dest, char *src)
 /**
  * new_dog - Creates dog
  *
- * @d: struct
  * @name: name
  * @age: age
  * @owner: owner name
