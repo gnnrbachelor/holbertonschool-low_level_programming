@@ -5,7 +5,7 @@
  *
  * @array: Array
  * @size: # of elements
- * @int_index: Index of first matching element
+ * @cmp: Pointer to function
  *
  * Return: Index, 0 or -1;
  */
