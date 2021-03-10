@@ -1,4 +1,5 @@
-#include "holberton.h"
+#include "function_pointers.h"
+#include <stdlib.h>
 
 /**
  * print_name - Prints name
