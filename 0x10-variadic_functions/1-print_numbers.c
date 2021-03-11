@@ -31,8 +31,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%d", current_number);
 
 	}
+	printf("\n");
 
 	va_end(numargs);
-
-	printf("\n");
 }
