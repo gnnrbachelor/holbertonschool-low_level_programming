@@ -7,7 +7,7 @@
 /**
  * print_strings - Prints strings
  *
- * @separator:
+ * @separator: Separator
  * @n: Number of arguments
  */
 
