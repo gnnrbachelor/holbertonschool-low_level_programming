@@ -17,18 +17,15 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list numargs;
 	unsigned int current_number;
 
-	if (n == 0)
-		return;
-
 	va_start(numargs, n);
 
 	for (i = 0; i < n; i++)
 	{
 		current_number = va_arg(numargs, int);
-		if (i != n - 1 && separator != NULL)
-			printf("%d%s", current_number, separator);
+		if (i != n - 1 && separator)
+			printf("%i%s", current_number, separator);
 		else
-			printf("%d", current_number);
+			printf("%i", current_number);
 
 	}
 	printf("\n");
