@@ -10,9 +10,9 @@ void print_f(va_list *arg);
 void print_s(va_list *arg);
 
 /**
- * print_all = Prints all types of arg
+ * print_all - Prints everything
  *
- * @format
+ * @format: format for print
  *
  * Return: Void
  */
@@ -104,6 +104,7 @@ void print_f(va_list *arg)
 void print_s(va_list *arg)
 {
 	char *s = va_arg(arg, char *);
+
 	if (s == NULL)
 		s = "(nill)";
 	printf("%s", s);
