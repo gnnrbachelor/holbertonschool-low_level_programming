@@ -106,6 +106,6 @@ void print_s(va_list *arg)
 	char *s = va_arg(arg, char *);
 
 	if (s == NULL)
-		s = "(nill)";
+		s = "(nil)";
 	printf("%s", s);
 }
