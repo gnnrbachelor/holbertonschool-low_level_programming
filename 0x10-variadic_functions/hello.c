@@ -2,5 +2,7 @@
 
 int main(void)
 {
-	printf("Hello, Holberton");
+	write(1, "Hello, Holberton\n", 17);
+
+	return (0);
 }
