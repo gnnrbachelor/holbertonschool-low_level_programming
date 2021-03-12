@@ -28,12 +28,6 @@ int main(int argc, char *argv[])
 	b = atoi(argv[3]);
 	c = argv[2];
 
-	if (argc != 4)
-	{
-		printf("Error\n");
-		exit(98);
-	}
-
 	if ((*c == '/' || *c == '%') && (a == 0 || b == 0))
 	{
 		printf("Error\n");
