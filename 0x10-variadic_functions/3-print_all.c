@@ -43,7 +43,7 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", separator);
 				print_array[j].format(&arg);
-				separator = ",";
+				separator = ", ";
 				break;
 			}
 			j++;
