@@ -24,10 +24,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		s = va_arg(strings, char *);
 
 		if (s)
+		{
 			printf("%s", s);
-		if (i != n - 1 && separator)
-			printf("%s", separator);
-		if (!s)
+			if (i != n - 1 && separator)
+				printf("%s", separator);
+		}
+		else
 			printf("(nil)");
 	}
 	printf("\n");
