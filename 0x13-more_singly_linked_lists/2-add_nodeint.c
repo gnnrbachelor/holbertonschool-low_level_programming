@@ -6,6 +6,7 @@
  * @head: Head of linked list
  * @n: new element
  *
+ * Return: New node
  */
 
 listint_t *add_nodeint(listint_t **head, const int n)

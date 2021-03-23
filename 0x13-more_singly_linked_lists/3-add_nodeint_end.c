@@ -1,11 +1,12 @@
 #include "lists.h"
 
 /**
- * add_nodeint - Adds new node at beginning of listint_t list
+ * add_nodeint_end - Adds new node at beginning of listint_t list
  *
  * @head: Head of linked list
  * @n: new element
  *
+ * Return: New node
  */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
