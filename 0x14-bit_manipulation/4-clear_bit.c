@@ -6,7 +6,7 @@
  * @n: Number
  * @index: Index
  *
- * Return 1 or -1
+ * Return: 1 or -1
  */
 
 int clear_bit(unsigned long int *n, unsigned int index)
