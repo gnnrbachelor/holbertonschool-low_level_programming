@@ -78,12 +78,12 @@ int main(int arc, char **argv)
 	cls2 = close(dest);
 	if (cls1 == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", src);
 		exit(100);
 	}
 	if (cls2 == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", dest);
 		exit(100);
 	}
 	return (0);
