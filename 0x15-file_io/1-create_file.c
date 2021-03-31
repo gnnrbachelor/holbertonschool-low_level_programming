@@ -35,11 +35,12 @@ int create_file(const char *filename, char *text_content)
 	if (text_content != NULL)
 		count = write(file, text_content, len);
 
-	if (count == -1)
+/*	if (count == -1)
 	{
 		write(1, "Fails", 5);
 		return (-1);
 	}
+*/
 	close(file);
 	return (1);
 }
