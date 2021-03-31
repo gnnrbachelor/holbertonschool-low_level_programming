@@ -32,7 +32,7 @@ void check_write(int dest, char *argv)
 	if (dest == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv);
-		exit(98);
+		exit(99);
 	}
 }
 
@@ -65,7 +65,7 @@ int main(int arc, char **argv)
 		wc = write(dest, buf, rc);
 		if (rc != wc)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
 	}
