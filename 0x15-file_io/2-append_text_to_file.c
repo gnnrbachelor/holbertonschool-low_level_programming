@@ -16,6 +16,9 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (!filename)
 		return (-1);
 
+	if (!text_content)
+		return (1);
+
 	for (len = 0; text_content[len]; len++)
 		;
 
@@ -23,12 +26,9 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (file == -1)
 		return (-1);
 
-	if (text_content != NULL)
-	{
-		count = write(file, text_content, len);
-		if (count == -1)
-			return (-1);
-	}
+	count = write(file, text_content, len);
+	if (count == -1)
+		return (-1);
 
 	close(file);
 	return (1);
