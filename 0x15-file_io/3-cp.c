@@ -72,7 +72,7 @@ int main(int arc, char **argv)
 	if (rc == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(99);
+		exit(98);
 	}
 	cls1 = close(src);
 	cls2 = close(dest);
