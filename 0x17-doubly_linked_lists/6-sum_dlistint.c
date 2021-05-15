@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * dlistint_t - Sums nodes
+ * sum_dlistint - Sums nodes
  *
  * @head: Head
  *
